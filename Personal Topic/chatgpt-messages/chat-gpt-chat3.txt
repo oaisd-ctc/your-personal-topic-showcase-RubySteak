@@ -1,0 +1,41 @@
+me: i am trying to center this list, but the dot part of the list is staying on the left. did i do something wrong?
+
+code:
+
+ <ul>
+    <li style="text-align: center;"><a href="./pages/ZGround.html">Z-ground</a></li>
+    <li style="text-align: center;"><a href="./pages/LuigiDownB.html">Down special i-frames</a></li>
+    <li style="text-align: center;"><a href="./pages/0-Death.html">0 to death</a></li>
+</ul>
+
+ChatGPT: 
+
+The issue you're encountering is due to the default styling of the <ul> element. The list markers (dots) align to the left by default, while the text inside the list items is centered. To center the entire list, including the dots, you can use CSS to remove the default list styling and set the list items to display in a way that centers everything.
+
+Here's one way to achieve that:
+
+<ul style="list-style-type: none; padding: 0; text-align: center;">
+    <li><a href="./pages/ZGround.html">Z-ground</a></li>
+    <li><a href="./pages/LuigiDownB.html">Down special i-frames</a></li>
+    <li><a href="./pages/0-Death.html">0 to death</a></li>
+</ul>
+
+
+Explanation:
+
+list-style-type: none;  This removes the default bullets from the list items.
+
+padding: 0;     This removes any default padding that might cause alignment issues.
+
+text-align: center;     This centers the text within the list.
+
+With this setup, the list should now appear centered without the left-aligned dots. 
+If you want to keep the bullets but still center the text, you could consider using a different approach, like using a flexbox:
+
+<ul style="list-style-type: disc; padding: 0; display: flex; flex-direction: column; align-items: center;">
+    <li><a href="./pages/ZGround.html">Z-ground</a></li>
+    <li><a href="./pages/LuigiDownB.html">Down special i-frames</a></li>
+    <li><a href="./pages/0-Death.html">0 to death</a></li>
+</ul>
+
+In this case, the "display: flex;" and "align-items: center;" properties center the list items while keeping the bullets

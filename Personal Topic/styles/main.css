@@ -1,0 +1,50 @@
+h1{
+
+font-size: 400%; text-align: center;
+
+}
+
+.intro-text{
+
+font-size: larger;
+
+}
+
+a{
+
+text-align: center;
+
+}
+
+.explanations{
+
+font-size: x-large;
+
+}
+
+.tier_list{
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+}
+
+.ZGround{
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+}
+
+.down-b_frame-7{
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+}
